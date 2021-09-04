@@ -1,0 +1,20 @@
+export const pokeTypes = {
+    'normal': 'bg-normal',
+    'flying': 'bg-flying',
+    'poison': 'bg-poison',
+    'electric': 'bg-electric',
+    'ground': 'bg-ground',
+    'grass' : 'bg-grass',
+    'fire' : 'bg-fire',
+    'water': 'bg-water',
+    'bug': 'bg-bug',
+    'ghost': 'bg-ghost',
+    'fighting': 'bg-fighting',
+    'psychic': 'bg-psychic',
+    'rock': 'bg-rock',
+    'ice': 'bg-ice',
+    'dragon': 'bg-dragon',
+    'dark': 'bg-dark',
+    'steel': 'bg-steel',
+    'fairy': 'bg-fairy'
+  }
