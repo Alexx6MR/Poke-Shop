@@ -15,8 +15,8 @@ function classNames(...classes) {
         <div className="relative">
           {/* //* POKE IMAGE & NAME/TYPE */}
           <div className=" relative group">
-            <div className="relative w-full h-72 rounded-lg overflow-hidden group-hover:overflow-visible flex justify-center items-center shadow-2xl">
-              <img src={pokemon?.pokeimage} alt={pokemon?.name} loading='lazy' className="pokeimg group-hover:scale-125 group-hover:relative group-hover:z-10"/>
+            <div className="relative w-full h-72 rounded-lg overflow-hidden lg:group-hover:overflow-visible flex justify-center items-center shadow-2xl">
+              <img src={pokemon?.pokeimage} alt={pokemon?.name} loading='lazy' className="pokeimg lg:group-hover:scale-125 lg:group-hover:relative lg:group-hover:z-10"/>
             </div>
             <div className="absolute top-0 inset-x-0 h-72 rounded-lg p-4 flex items-end justify-between overflow-hidden">
               <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent"/>
@@ -49,8 +49,8 @@ function classNames(...classes) {
         <div className="mt-4">    
           <button onClick={()=>addFavorite(pokemon)}  type="button"
             className={classNames( inpokes ? 'bg-red-500 text-white hover:bg-red-700' 
-              : isFavorite ? 'bg-indigo-600 text-white hover:bg-indigo-900 hover:text-white' 
-              : 'bg-indigo-300 hover:bg-indigo-600 hover:text-white',
+              : isFavorite ? 'bg-indigo-600 text-white lg:hover:bg-indigo-900 lg:hover:text-white' 
+              : 'bg-indigo-300 lg:hover:bg-indigo-600 lg:hover:text-white',
               "w-full justify-center flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md")}>
                 { inpokes ? 'delete': isFavorite ? 'in favorite' : 'add to favorite'}
           </button> 

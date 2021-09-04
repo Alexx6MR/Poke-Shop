@@ -64,8 +64,13 @@ function TheNavBar() {
           <Disclosure.Panel as="nav" className="lg:hidden" aria-label="Global">
 
             <div className="pt-2 pb-3 px-2 space-y-1">
-              <ActiveLink href="/">Home</ActiveLink>  
-              <ActiveLink href="/mypoke">
+              <ActiveLink href="/">
+              <Disclosure.Button>
+                Home
+              </Disclosure.Button>
+              </ActiveLink>  
+              <ActiveLink href="/mypoke" >
+              <Disclosure.Button>
                 Mypokes
                 { totalpokes == 0 ? '' :
                     <div className="h-full w-4 flex items-start justify-start">
@@ -77,11 +82,12 @@ function TheNavBar() {
                     </div> 
                     </div>
                   }
+                  </Disclosure.Button>
               </ActiveLink>
             </div>
            
             <div>
-              <PokeSearch/>
+              <PokeSearch event={filtrarPokes}/>
             </div>
            
           </Disclosure.Panel>
